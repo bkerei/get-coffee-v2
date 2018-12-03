@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.gridcontainer {
+    display: grid;
+
+    grid-template-areas:"sidebar header header header" 
+                        "sidebar cafe1 cafe2 cafe3"
+                        "sidebar cafe4 cafe5 cafe6"
+                    ;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2px;
+
+    height: 100vh;
+}
+
+
+.map{
+    grid-area: sidebar;
+}
+
+.theTopHeader{
+    grid-area: header;
+    text-align: center;
+}
+
+
+.cafeTopImage{
+    height: 80%;
+}
+
+.cafeAddress{
+    height: 20%;
+}
+
+.cafeStyle{
+    height: 25vh;
+    margin: 20px;
+    text-align: center;
+}
+
+.theBackground{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -999;
+    filter: opacity(0.9) blur(2px) brightness(0.3);
+    background-image: url(https://www.incimages.com/uploaded_files/image/1940x900/getty_504333530_361153.jpg);
+    background-blend-mode: lighten;
+    background-size: cover;
+}
+
+
+.intro {
+    grid-area: content;
+    display: grid;
+}
+.section{
+	border-radius:5px;
+	background-color:blanchedalmond;
+}
+.section .fa{
+	font-size:17px;
+	margin-right: 5px;
+}
+.section:hover,.section:hover.section img{
+	box-shadow:1px 2px 24px 0px #000;
+	transition:0.5s;
+}
+.section h1{
+	margin:0px;
+	font-size:25px;
+	color:#8B95A5;
+}
+.section p{
+	margin:0px;
+	font-weight:500;
+	margin-bottom:40px;
+	letter-spacing: 1px;
+}
+.section img{
+	width:20%;
+	border-radius: 50%;
+	margin:20px 0px 10px 0px;
+}
+.user-detail{
+	background-color:#FCFDDB;
+	border-top:1px solid #d2d2d2;
+	padding: 5px 0px;
+	border-radius:0px 0px 5px 5px;
+}
+.user-detail h2{
+	font-size: 20px;
+	color:#a2a2a2;
+	font-weight:400;
+}
+
+.title {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: blanchedalmond;
+
+} 

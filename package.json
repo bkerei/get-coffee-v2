@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "start": "webpack && node server",
-    "dev": "node server & webpack --watch",
+    "dev": "node server & webpack --watch --mode development",
     "test": "jest --watchAll"
   },
   "babel": {
@@ -26,7 +26,8 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -39,7 +40,7 @@
     "jest": "^22.1.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.10.0",
+    "webpack": "^4.26.1",
     "webpack-dev-server": "^2.11.1"
   }
 }
